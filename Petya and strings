@@ -1,0 +1,11 @@
+def compare(s, n):
+    if s.lower() < n.lower():
+        return -1
+    elif s.lower() > n.lower():
+        return 1
+    else:
+        return 0
+
+s = input()
+n = input()
+print(compare(s,n))
