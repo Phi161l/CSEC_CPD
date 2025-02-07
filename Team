@@ -1,0 +1,22 @@
+def team(s):
+ 
+    view = 0
+    for i in s:
+        if i == 1:
+           view += 1
+ 
+    ans = 0
+    if view >= 2:
+        ans += 1
+ 
+    return ans
+    
+    
+ 
+n = int(input())
+res = 0
+for _ in range(n):
+    s = list(map(int, input().split()))
+    res += team(s)
+ 
+print(res)
