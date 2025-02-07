@@ -1,0 +1,25 @@
+def swap(mat):
+
+    for i in range(5):
+        for j in range(5):
+            if mat[i][j] == 1:
+                r,c = i,j
+
+    summ = 0    
+    while r != 2 or c != 2:
+        if r > 2:
+            r -= 1
+            summ += 1
+        elif r < 2:
+            r += 1
+            summ += 1
+        elif c > 2:
+            c -= 1
+            summ += 1
+        elif c < 2:
+            c += 1
+            summ += 1
+    return summ
+
+mat = [list(map(int, input().split())) for _ in range(5)]
+print(swap(mat))
