@@ -1,0 +1,11 @@
+def weight(a, b):
+    NoYear = 0
+    while a <= b:
+        a = a*3
+        b = b*2
+        NoYear += 1
+
+    return NoYear
+
+a, b = map(int, input().split())
+print(weight(a,b))
