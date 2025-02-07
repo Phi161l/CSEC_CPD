@@ -1,0 +1,11 @@
+def girls(s):
+    # l = list(s)
+    seen = set(s)
+    if len(seen) % 2 != 0:
+       return "IGNORE HIM!" 
+    else:
+       return "CHAT WITH HER!"      
+
+
+s = input()
+print(girls(s))
