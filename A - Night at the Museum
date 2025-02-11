@@ -1,0 +1,15 @@
+def night(name):
+
+    a = 'a' 
+    ans = 0
+    for c in name:
+        d = abs(ord(c) - ord(a))  
+        ans += min(d, 26 - d)
+        a = c  
+    
+    return ans
+
+
+name = input()
+print(night(name))
+
