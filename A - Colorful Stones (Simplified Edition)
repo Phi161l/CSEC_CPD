@@ -1,0 +1,12 @@
+def position(s, t):
+
+    i = 0  
+    for a in t:
+        if i < len(s) and s[i] == a:
+            i += 1  
+
+    return i + 1  
+
+s = input()
+t = input()
+print(position(s, t))
