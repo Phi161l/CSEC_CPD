@@ -1,0 +1,24 @@
+def shaass(n, a, m, shots):
+    for x, y in shots:
+        x -= 1  
+        l = y - 1  
+        r = a[x] - y  
+
+        if x > 0:
+            a[x - 1] += l
+        
+        if x < n - 1:
+            a[x + 1] += r
+
+        a[x] = 0
+    
+    for count in a:
+        print(count)
+
+
+n = int(input().strip())
+a = list(map(int, input().split()))
+m = int(input().strip())
+shots = [tuple(map(int, input().split())) for _ in range(m)]
+
+shaass(n, a, m, shots)
