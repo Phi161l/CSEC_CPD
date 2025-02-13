@@ -1,0 +1,12 @@
+def hourse(l):
+
+    s = set()
+    for i in l:
+        s.add(i)
+
+    return len(l) - len(s)
+
+
+
+l = list(map(int, input().split()))
+print(hourse(l))
