@@ -1,0 +1,14 @@
+def buy(k,r):
+
+    a = 1
+    flag = True
+    while flag:
+        m = a * k 
+        b = m % 10
+        if b == 0 or b == r:
+            return a    
+        a += 1
+        
+
+k,r = map(int,input().split())
+print(buy(k,r))
