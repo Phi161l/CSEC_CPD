@@ -1,0 +1,16 @@
+import math
+
+def die(Y, W):
+    m = max(Y, W)
+    res = 7 - m
+    summ = 6
+    
+    gcd = math.gcd(res, summ)
+    
+    numerator = res // gcd
+    denominator = summ // gcd
+    
+    print(f"{numerator}/{denominator}")
+
+Y, W = map(int, input().split())
+die(Y, W)
